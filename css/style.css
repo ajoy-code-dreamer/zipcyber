@@ -221,6 +221,50 @@ body {
   background:linear-gradient(rgba(34, 34, 34, 0.4),rgba(34, 34, 34, 0.5));
   z-index: 9999;
 }
+.banner_content_wrapper{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  -o-transform: translate(-50%,-50%);
+}
+.banner_btn_wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 20px;
+}
+.banner_btn_wrapper a{
+  font-family: var(--oswald-font);
+  font-size: 16px;
+  font-weight: var(--medium-weight);
+  background-color: var(--secondary-bg-clr);
+  color: var(--primary-text-clr);
+  text-transform: capitalize;
+  padding: 10px 30px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
+.banner_btn_wrapper a:hover{
+  background-color: var(--primary-text-clr);
+  color: var(--secondary-bg-clr);
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
 .banner_arrows{
   position: absolute;
   top: 50%;
