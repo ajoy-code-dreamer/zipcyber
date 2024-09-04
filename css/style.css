@@ -22,6 +22,7 @@
   /* === font weight === */
   /* === colors === */
   --white-clr: #fff;
+  --transparent-clr: transparent;
   --primary-text-clr: #2e073f;
   --secondary-text-clr: #191919;
   --primary-clr: #7a1cac;
@@ -81,9 +82,11 @@ body {
 /* ============== navbar css start here ================= */
 #navbar {
   width: 100%;
-  padding: 10px 0;
-  background-color: var(--primary-bg-clr);
+  padding: 5px 0;
+  background-color: var(--secondary-bg-clr-bg-clr);
+  border-bottom: 1px solid var(--primary-clr);
 }
+
 .brand_logo {
   width: 70px;
   height: 60px;
@@ -95,18 +98,25 @@ body {
 .collapse_bar {
   padding: 0 4px;
   color: var(--primary-text-clr);
-  border: 2px dashed transparent;
   transition: var(--transition);
   -webkit-transition: var(--transition);
   -moz-transition: var(--transition);
   -ms-transition: var(--transition);
   -o-transition: var(--transition);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  background-color: var(--transparent-clr);
 }
 .collapse_bar:hover {
-  border: 2px dashed var(--primary-text-clr);
+  box-shadow: 5px 5px 5px var(--primary-clr);
+  opacity: 0.7;
 }
 .navbar-toggler {
   box-shadow: none !important;
+  background-color: var(--transparent-clr);
 }
 .nav-link {
   padding: 0 !important;
@@ -124,10 +134,10 @@ body {
   position: relative;
 }
 .nav-link:hover {
-  color: var(--secondary-bg-clr);
+  color: var(--primary-clr);
 }
 .nav-link:focus {
-  color: var(--secondary-bg-clr);
+  color: var(--primary-clr);
 }
 .nav-link::after {
   position: absolute;
@@ -136,7 +146,7 @@ body {
   height: 2px;
   bottom: -2px;
   left: 0;
-  background-color: var(--secondary-bg-clr);
+  background-color: var(--primary-clr);
   transition: var(--transition);
   -webkit-transition: var(--transition);
   -moz-transition: var(--transition);
@@ -161,23 +171,25 @@ body {
   font-size: 15px;
   color: var(--secondary-bg-clr);
   background-color: var(--primary-text-clr);
-  padding: 10px 22px;
+  padding: 10px 25px;
   margin-left: 15px;
   text-transform: capitalize;
-  border-radius: 25px;
-  -webkit-border-radius: 25px;
-  -moz-border-radius: 25px;
-  -ms-border-radius: 25px;
-  -o-border-radius: 25px;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
   transition: var(--transition);
   -webkit-transition: var(--transition);
   -moz-transition: var(--transition);
   -ms-transition: var(--transition);
   -o-transition: var(--transition);
+  border: 2px solid var(--transparent-clr);
 }
 .nav_btn:hover {
   color: var(--primary-text-clr);
-  background-color: var(--secondary-bg-clr);
+  background-color: var(--primary-clr);
+  border: 2px solid var(--primary-text-clr);
 }
 /* ============== navbar css end here ================= */
 
@@ -198,7 +210,7 @@ body {
   font-weight: var(--semi-bold-weight);
   color: var(--secondary-bg-clr);
   padding: 10px 0;
-  text-shadow: -10px 10px 10px var(--secondary-bg-clr);
+  text-shadow: -1px 8px 10px var(--secondary-bg-clr);
 }
 .banner_overlay{
   position: absolute;
