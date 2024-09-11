@@ -14,6 +14,36 @@
         padding: 10px 40px;
     }
     /* === navbar === */
+    /* === banner === */
+    .banner_notice_text {
+        font-size: 16px;
+        padding: 5px;
+    }
+    .banner_arrows {
+        left: 10px;
+        font-size: 25px;
+    }
+    .banner_next_arrow {
+        left: unset;
+        right: 10px;
+        top: 50%;
+    }
+    .banner_content_wrapper {
+        padding-top: 40px;
+    }
+    .banner_heading_text{
+        font-size: 22px;
+        padding-bottom: 30px;
+    }
+    .banner_btn_wrapper {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .banner_btn_wrapper a {
+        font-size: 14px;
+        padding: 8px 20px;
+        }
+    /* === banner === */
 	
 }
 /* ========================= device (xs 0 > 576) ========================= */
@@ -33,6 +63,35 @@
         padding: 10px 40px;
     }
     /* === navbar === */
+    /* === banner === */
+    .banner_notice_text {
+        font-size: 18px;
+        padding: 5px;
+    }
+    .banner_arrows {
+        left: 18px;
+        font-size: 30px;
+    }
+    .banner_next_arrow {
+        left: unset;
+        right: 18px;
+        top: 50%;
+    }
+    .banner_content_wrapper {
+        padding-top: 80px;
+    }
+    .banner_heading_text{
+        font-size: 28px;
+        padding-bottom: 40px;
+    }
+    .banner_btn_wrapper {
+        gap: 10px;
+    }
+    .banner_btn_wrapper a {
+        font-size: 16px;
+        padding: 8px 20px;
+        }
+    /* === banner === */
 }
 /* ========================= device (sm 576 > 768) ========================= */
 
