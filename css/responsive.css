@@ -15,6 +15,9 @@
     }
     /* === navbar === */
     /* === banner === */
+    #banner{
+        height: unset;
+    }
     .banner_notice_text {
         font-size: 16px;
         padding: 5px;
@@ -64,6 +67,9 @@
     }
     /* === navbar === */
     /* === banner === */
+    #banner{
+        height: unset;
+    }
     .banner_notice_text {
         font-size: 18px;
         padding: 5px;
@@ -107,6 +113,11 @@
         padding: 10px 40px;
     }
     /* === navbar === */
+    /* === banner === */
+    #banner{
+        height: unset;
+    }
+    /* === banner === */
 }
 /* ========================= device (md 768 > 992) ========================= */
 

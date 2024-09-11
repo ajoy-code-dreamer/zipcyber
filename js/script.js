@@ -24,8 +24,8 @@ var typed = new Typed(".typed", {
     "The best internet service in this Area",
     "Connect Faster - Live Better.",
 ],
-    typeSpeed: 60,
-    backSpeed: 60,
+    typeSpeed: 100,
+    backSpeed: 20,
     loop: true,
 });
 // ==== type js ====
