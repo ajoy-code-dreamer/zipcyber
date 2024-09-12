@@ -190,8 +190,31 @@ body {
   background-color: var(--transparent-clr);
   border: 2px solid var(--primary-text-clr);
 }
-/* ============== navbar css end here ================= */
 
+/* ============== navbar css end here ================= */
+/* ================= notice section css ============== */
+#notice{
+  position: relative;
+}
+.billing_notice {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  right: 0;
+  z-index: 9999999;
+}
+.billing_notice_text {
+  font-family: var(--bangla-font);
+  font-size: 22px;
+  font-weight: var(--bold-weight);
+  color: var(--secondary-bg-clr);
+  padding: 10px 0;
+}
+.billing_notice_text i{
+  color: red;
+}
+
+/* ================= notice section css ============== */
 /* ============== banner css start here ================= */
 #banner {
   position: relative;
@@ -200,23 +223,7 @@ body {
   object-fit: cover;
   object-position: center;
 }
-.banner_notice {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 9999999;
-}
-.banner_notice_text {
-  font-family: var(--bangla-font);
-  font-size: 22px;
-  font-weight: var(--bold-weight);
-  color: var(--secondary-bg-clr);
-  padding: 10px 0;
-}
-.banner_notice_text i{
-  color: red;
-}
+
 .banner_overlay {
   position: absolute;
   top: 0;
@@ -305,11 +312,22 @@ body {
 .banner_arrows:hover {
   opacity: 0.9;
 }
-
 /* ============== banner css end here ================= */
 
-/* ==============  css start here ================= */
-/* ==============  css end here ================= */
+/* ============== package section css start here ================= */
+#package{
+  padding: 100px 0;
+}
+.packageSection .billing_notice_text{
+  color: var(--primary-text-clr);
+}
+.package_item_wrapper{
+  max-width: 320px;
+  border: 1px solid var(--primary-text-clr);
+  text-align: center;
+  padding: 30px
+}
+/* ============== package section css end here ================= */
 
 /* ============== footer css start here ================= */
 #footer {

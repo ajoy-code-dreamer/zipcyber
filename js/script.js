@@ -21,6 +21,7 @@ $(".banner_slider_wrapper").slick({
 var typed = new Typed(".typed", {
     strings: [
     "Welcome to Zip Cyber",
+    "BTRC registered ISP",
     "The best internet service in this Area",
     "Connect Faster - Live Better.",
 ],
