@@ -356,30 +356,37 @@ body {
   height: 480px;
   border: 1px solid var(--primary-clr);
   margin: 0 auto;
-  box-shadow: 4px 3px 8px rgba(122, 28, 172, 0.753);
-  border-radius: 10px 10px 0px 0px;
-  -webkit-border-radius: 10px 10px 0px 0px;
-  -moz-border-radius: 10px 10px 0px 0px;
-  -ms-border-radius: 10px 10px 0px 0px;
-  -o-border-radius: 10px 10px 0px 0px;
-}
-.package_itemOverlay{
-  width: 100%;
-  height: 100%;
+  box-shadow: inset 2px 1px 20px 5px rgba(122, 28, 172, 0.753);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
 }
 .package_item{
   text-align: center;
+  position: relative;
 }
 .package_name{
   width: 100%;
   padding: 45px 0;
   background-color: var(--primary-text-clr);
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   border-radius: 10px 10px 0px 0px;
   -webkit-border-radius: 10px 10px 0px 0px;
   -moz-border-radius: 10px 10px 0px 0px;
   -ms-border-radius: 10px 10px 0px 0px;
   -o-border-radius: 10px 10px 0px 0px;
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
 }
 .package_name h3{
   font-family: var(--oswald-font);
@@ -389,7 +396,27 @@ body {
   text-align: center;
 }
 .package_details{
-  margin-bottom: 30px;
+  margin-bottom: 35px;
+  position: relative;
+}
+.package_details::after{
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 3px;
+  background-color: var(--primary-text-clr);
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  border-radius: 2%;
+  -webkit-border-radius: 2%;
+  -moz-border-radius: 2%;
+  -ms-border-radius: 2%;
+  -o-border-radius: 2%;
 }
 .package_details ul{
   display: flex;
@@ -411,27 +438,54 @@ body {
   font-size: 13px;
 }
 .package_price{
+  font-family: var(--oswald-font);
+  color: var(--secondary-bg-clr);
   display: flex;
   justify-content: center;
   align-items: end;
   column-gap: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   text-shadow: 1px 4px 10px rgba(122, 28, 172, 0.4);
+  border-top: 3px solid var(--primary-text-clr);
+  border-bottom: 3px solid var(--primary-text-clr);
+  padding: 3px 0 5px 0;
+  background-color: var(--primary-clr);
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
 }
 .package_price h4{
-  font-family: var(--oswald-font);
   font-size: 26px;
   font-weight: var(--bold-weight);
-  color: var(--primary-text-clr);
 }
 .package_price h4 span{
   font-size: 16px;
 }
 .package_price p{
-  font-family: var(--oswald-font);
   font-size: 14px;
-  color: var(--primary-text-clr);
 }
+.package_item_wrapper:hover{
+  box-shadow: none;
+  border-radius: 10px 10px 0px 0px;
+  -webkit-border-radius: 10px 10px 0px 0px;
+  -moz-border-radius: 10px 10px 0px 0px;
+  -ms-border-radius: 10px 10px 0px 0px;
+  -o-border-radius: 10px 10px 0px 0px;
+  transform: translateY(10px);
+  -webkit-transform: translateY(10px);
+  -moz-transform: translateY(10px);
+  -ms-transform: translateY(10px);
+  -o-transform: translateY(10px);
+}
+.package_item_wrapper:hover .package_name{
+  background-color: var(--primary-clr);
+}
+.package_item_wrapper:hover .package_price{
+  background-color: var(--primary-text-clr);
+}
+
 /* ============== package section css end here ================= */
 
 /* ============== footer css start here ================= */
