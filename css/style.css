@@ -111,6 +111,7 @@ body {
   color: var(--primary-text-clr);
   margin-bottom: 55px;
   position: relative;
+  text-align: center;
 }
 .common_section_heading::before{
   position: absolute;
@@ -118,13 +119,13 @@ body {
   width: 50px;
   height: 3px;
   background-color: var(--primary-clr);
-  left: 25%;
+  left: 22%;
   top: 50%;
-  transform: translateX(-50%);
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
 }
 .common_section_heading::after{
   position: absolute;
@@ -134,7 +135,7 @@ body {
   background-color: var(--primary-clr);
   right: 20%;
   top: 50%;
-  transform: translateX(-50%);
+  transform: translateY(-50%);
   -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
@@ -354,9 +355,9 @@ body {
 .package_item_wrapper{
   max-width: 320px;
   height: 480px;
-  border: 1px solid var(--primary-clr);
+  border: 0.5px solid var(--transparent-clr);
   margin: 0 auto;
-  box-shadow: inset 2px 1px 20px 5px rgba(122, 28, 172, 0.753);
+  box-shadow: inset 2px 1px 20px 5px rgba(46, 7, 63, 0.5);
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -394,6 +395,7 @@ body {
   font-weight: var(--bold-weight);
   color: var(--secondary-bg-clr);
   text-align: center;
+  text-transform: capitalize;
 }
 .package_details{
   margin-bottom: 35px;
@@ -467,7 +469,7 @@ body {
   font-size: 14px;
 }
 .package_item_wrapper:hover{
-  box-shadow: none;
+  box-shadow: unset;
   border-radius: 10px 10px 0px 0px;
   -webkit-border-radius: 10px 10px 0px 0px;
   -moz-border-radius: 10px 10px 0px 0px;
@@ -478,6 +480,7 @@ body {
   -moz-transform: translateY(10px);
   -ms-transform: translateY(10px);
   -o-transform: translateY(10px);
+  border-color: var(--primary-text-clr);
 }
 .package_item_wrapper:hover .package_name{
   background-color: var(--primary-clr);
