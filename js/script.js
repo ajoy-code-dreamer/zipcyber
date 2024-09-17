@@ -17,7 +17,7 @@ $(".banner_slider_wrapper").slick({
   // ==== counter operation ====
   $('.counting').counterUp({
     delay: 20,
-    time: 5000
+    time: 2000
   });
   // ==== counter operation ====
 });

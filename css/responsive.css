@@ -205,13 +205,29 @@
   }
     /* === counter === */
   /* === package === */
-  
+  .common_section_heading::after {
+    right: 3%;
+}
+  .common_section_heading::before {
+    left: 6%;
+}
+  .common_section_heading::after {
+    right: 3%;
+}
   /* === package === */
 }
 /* ========================= device (md 768 > 992) ========================= */
 
 /* ========================= device (lg 992 > 1200) ========================= */
 @media (min-width: 992px) and (max-width: 1199.98px) {
+    /* === package === */
+    .common_section_heading::after {
+      right: 13%;
+    }
+    .common_section_heading::before {
+      left: 16%;
+    }
+    /* === package === */
 }
 /* ========================= device (lg 992 > 1200) ========================= */
 
