@@ -345,6 +345,100 @@ body {
 }
 /* ============== banner css end here ================= */
 
+/* ================ counter section start here ==================== */
+#counter{
+  width: 100%;
+  padding: 20px 0;
+  background-color: var(--primary-text-clr);
+}
+.counterWrapperMain{
+  position: relative;
+}
+.counter_item_wrapper{
+  margin: 0 auto;
+}
+.counterWrapperMain::after{
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 100px;
+  background-color: var(--primary-bg-clr);
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+.counterWrapperMain::before{
+  position: absolute;
+  content: "";
+  width: 100px;
+  height: 1px;
+  background-color: var(--primary-bg-clr);
+  top: unset;
+  right: unset;
+  left: 50%;
+  bottom: -25px;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+.counterWrapperMain::before{
+  display: none;
+}
+.counterWrapperMain:nth-child(4)::after{
+  display: none;
+}
+.counter_item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  text-transform: capitalize;
+}
+.counter_icon{
+  font-size: 30px;
+  color: var(--secondary-bg-clr);
+}
+.counter_number{
+  font-family: var(--oswald-font);
+  font-size: 48px;
+  font-weight: var(--semi-bold-weight);
+  color: var(--secondary-bg-clr);
+  padding-bottom: 20px;
+}
+.counter_plus{
+  font-size: 38px;
+}
+.counter_name{
+  font-family: var(--barlow-font);
+  font-size: 18px;
+  font-weight: var(--medium-weight);
+  color: var(--primary-clr);
+  padding-bottom: 10px;
+  position: relative;
+}
+.counter_name::before{
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 2px;
+  background-color: var(--primary-bg-clr);
+  left: 50%;
+  top: -10px;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+
+/* ================ counter section start here ==================== */
 /* ============== package section css start here ================= */
 #package{
   padding: 50px 0;

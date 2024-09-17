@@ -51,6 +51,25 @@
     padding: 8px 20px;
   }
   /* === banner === */
+  /* === counter === */
+  .counterWrapperMain::after{
+    width:200px;
+    height: 1px;
+    top: unset;
+    right: unset;
+    left: 50%;
+    bottom: -25px;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+.counterWrapperMain:nth-child(4)::after{
+  display: none;
+}
+  /* === counter === */
   /* === package === */
   .common_section_heading::before {
     display: none;
@@ -123,6 +142,17 @@
     padding: 8px 20px;
   }
   /* === banner === */
+  /* === counter === */
+.counterWrapperMain:nth-child(1)::before{
+  display: block;
+}
+.counterWrapperMain:nth-child(2)::before{
+  display: block;
+}
+  .counterWrapperMain:nth-child(2)::after{
+    display: none;
+  }
+    /* === counter === */
   /* === package === */
   /* === package === */
   .common_section_heading::before {
@@ -163,6 +193,17 @@
     height: unset;
   }
   /* === banner === */
+/* === counter === */
+.counterWrapperMain:nth-child(1)::before{
+  display: block;
+}
+.counterWrapperMain:nth-child(2)::before{
+  display: block;
+}
+  .counterWrapperMain:nth-child(2)::after{
+    display: none;
+  }
+    /* === counter === */
   /* === package === */
   
   /* === package === */

@@ -14,6 +14,12 @@ $(".banner_slider_wrapper").slick({
     adaptiveHeight: true,
     });
   // ==== banner slider ====
+  // ==== counter operation ====
+  $('.counting').counterUp({
+    delay: 20,
+    time: 5000
+  });
+  // ==== counter operation ====
 });
 // ===== jQuery operation =====
 
