@@ -14,6 +14,50 @@ $(".banner_slider_wrapper").slick({
     adaptiveHeight: true,
     });
   // ==== banner slider ====
+  // ==== package slider ====
+$(".package_slider").slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    speed: 1500,
+    swipeToSlide: true,
+    nextArrow: ".package_next_arrow",
+    prevArrow: ".package_prev_arrow",
+    infinity:true,
+    autoplay: true,
+    autoplaySpeed: 1500,
+    adaptiveHeight: true,
+    dots: true,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 1020,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 760,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: false
+          
+        }
+      }
+      // You can unslick at a given breakpoint now by adding:
+      // settings: "unslick"
+      // instead of a settings object
+    ]
+    });
+  // ==== package slider ====
   // ==== counter operation ====
   $('.counting').counterUp({
     delay: 20,
