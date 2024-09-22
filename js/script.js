@@ -44,7 +44,7 @@ $(".package_slider").slick({
         }
       },
       {
-        breakpoint: 760,
+        breakpoint: 600,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,

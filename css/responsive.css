@@ -36,7 +36,7 @@
     top: 50%;
   }
   .banner_content_wrapper {
-    padding-top: 40px;
+    padding-top: 60px;
   }
   .banner_heading_text {
     font-size: 22px;
@@ -45,6 +45,7 @@
   .banner_btn_wrapper {
     flex-direction: column;
     gap: 10px;
+    padding-bottom: 50px;
   }
   .banner_btn_wrapper a {
     font-size: 14px;
@@ -52,8 +53,8 @@
   }
   /* === banner === */
   /* === counter === */
-  .counterWrapperMain::after{
-    width:200px;
+  .counterWrapperMain::after {
+    width: 200px;
     height: 1px;
     top: unset;
     right: unset;
@@ -64,11 +65,11 @@
     -moz-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     -o-transform: translateX(-50%);
-}
+  }
 
-.counterWrapperMain:nth-child(4)::after{
-  display: none;
-}
+  .counterWrapperMain:nth-child(4)::after {
+    display: none;
+  }
   /* === counter === */
   /* === package === */
   .common_section_heading::before {
@@ -84,13 +85,16 @@
     -moz-transform: translate(-50%, 0);
     -ms-transform: translate(-50%, 0);
     -o-transform: translate(-50%, 0);
-}
-.package_item_wrapper {
+  }
+  .package_item_wrapper {
     max-width: 270px;
-}
-.package_name h3 {
+  }
+  .package_name h3 {
     font-size: 30px;
-}
+  }
+  #package .slick-slide {
+    padding-bottom: 25px;
+  }
   /* === package === */
 }
 /* ========================= device (xs 0 > 576) ========================= */
@@ -114,6 +118,9 @@
   #banner {
     height: unset;
   }
+  .banner_slider_wrapper {
+    height: 400px;
+  }
   .banner_notice_text {
     font-size: 18px;
     padding: 5px;
@@ -128,7 +135,7 @@
     top: 50%;
   }
   .banner_content_wrapper {
-    padding-top: 80px;
+    padding-top: 120px;
   }
   .banner_heading_text {
     font-size: 28px;
@@ -143,17 +150,30 @@
   }
   /* === banner === */
   /* === counter === */
-.counterWrapperMain:nth-child(1)::before{
-  display: block;
-}
-.counterWrapperMain:nth-child(2)::before{
-  display: block;
-}
-  .counterWrapperMain:nth-child(2)::after{
+  .counterWrapperMain:nth-child(1)::before {
+    display: block;
+  }
+  .counterWrapperMain:nth-child(2)::before {
+    display: block;
+  }
+  .counterWrapperMain:nth-child(2)::after {
     display: none;
   }
-    /* === counter === */
+  /* === counter === */
   /* === package === */
+  .package_item_wrapper {
+    width: 250px;
+  }
+  #package .slick-slide {
+    padding-bottom: 25px;
+  }
+  .package_arrows {
+    left: 10%;
+  }
+  .package_next_arrow {
+    left: unset;
+    right: 10%;
+  }
   /* === package === */
   .common_section_heading::before {
     display: none;
@@ -168,10 +188,10 @@
     -moz-transform: translate(-50%, 0);
     -ms-transform: translate(-50%, 0);
     -o-transform: translate(-50%, 0);
-}
-.package_name h3 {
+  }
+  .package_name h3 {
     font-size: 28px;
-}
+  }
   /* === package === */
 }
 /* ========================= device (sm 576 > 768) ========================= */
@@ -193,46 +213,86 @@
     height: unset;
   }
   /* === banner === */
-/* === counter === */
-.counterWrapperMain:nth-child(1)::before{
-  display: block;
-}
-.counterWrapperMain:nth-child(2)::before{
-  display: block;
-}
-  .counterWrapperMain:nth-child(2)::after{
+  /* === counter === */
+  .counterWrapperMain:nth-child(1)::before {
+    display: block;
+  }
+  .counterWrapperMain:nth-child(2)::before {
+    display: block;
+  }
+  .counterWrapperMain:nth-child(2)::after {
     display: none;
   }
-    /* === counter === */
+  /* === counter === */
   /* === package === */
   .common_section_heading::after {
     right: 3%;
-}
+  }
   .common_section_heading::before {
     left: 6%;
-}
+  }
   .common_section_heading::after {
     right: 3%;
-}
+  }
+  /* === package === */
+  .package_arrows {
+    left: 20%;
+  }
+  .package_next_arrow {
+    left: unset;
+    right: 20%;
+  }
+  /* === package === */
   /* === package === */
 }
 /* ========================= device (md 768 > 992) ========================= */
 
 /* ========================= device (lg 992 > 1200) ========================= */
 @media (min-width: 992px) and (max-width: 1199.98px) {
-    /* === package === */
-    .common_section_heading::after {
-      right: 13%;
-    }
-    .common_section_heading::before {
-      left: 16%;
-    }
-    /* === package === */
+  /* === banner === */
+  /* === banner === */
+  #banner {
+    height: unset;
+  }
+  .banner_slider_wrapper {
+    height: 500px;
+  }
+  /* === banner === */
+  /* === banner === */
+  /* === package === */
+  .common_section_heading::after {
+    right: 13%;
+  }
+  .common_section_heading::before {
+    left: 16%;
+  }
+  .package_item_wrapper{
+    width: 300px;
+  }
+  .package_arrows {
+    left: 20%;
+  }
+  .package_next_arrow {
+    left: unset;
+    right: 20%;
+  }
+
+  /* === package === */
 }
 /* ========================= device (lg 992 > 1200) ========================= */
 
 /* ========================= device (xl 1200 > 1400) ========================= */
 @media (min-width: 1200px) and (max-width: 1400px) {
+  /* === banner === */
+  /* === banner === */
+  #banner {
+    height: unset;
+  }
+  .banner_slider_wrapper {
+    height: 700px;
+  }
+  /* === banner === */
+  /* === banner === */
 }
 /* ========================= device (xl 1200 > 1400) ========================= */
 /* ========================= device (xxl 1400 >>) ========================= */

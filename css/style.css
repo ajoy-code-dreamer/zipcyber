@@ -261,12 +261,11 @@ body {
 /* ============== banner css start here ================= */
 #banner {
   position: relative;
-  height: 87vh;
   overflow: hidden;
   object-fit: cover;
   object-position: center;
+  height: 85vh ;
 }
-
 .banner_overlay {
   position: absolute;
   top: 0;
@@ -276,6 +275,7 @@ body {
   background: linear-gradient(rgba(55, 53, 53, 0.4), rgba(21, 19, 19, 0.5));
   z-index: 9999;
 }
+
 .banner_content_wrapper {
   height: 100%;
   justify-content: center;
