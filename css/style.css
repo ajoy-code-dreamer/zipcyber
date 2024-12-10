@@ -74,7 +74,7 @@ body {
   background-color: var(--secondary-bg-clr);
 }
 .container {
-  max-width: 1320;
+  max-width: 1320px;
   margin: 0 auto;
 }
 .common_btn{
